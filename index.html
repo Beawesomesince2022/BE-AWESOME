@@ -1,0 +1,765 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE AWESOME | Official Store</title>
+
+    <!-- Google Fonts: Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="#home" class="brand-logo">BE AWESOME<span>.</span></a>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#home" class="nav-link active">Início</a>
+            <a href="#colecoes" class="nav-link">Coleções</a>
+            <a href="#galeria" class="nav-link">Galeria</a>
+            <a href="#sobre" class="nav-link">A marca</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button" aria-label="Pesquisar">
+                <i class="bi bi-search"></i>
+            </button>
+
+            <button class="icon-button cart-button" id="openCart" aria-label="Abrir carrinho">
+                <i class="bi bi-bag"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO BANNER -->
+    <section class="hero" id="home">
+
+        <div class="hero-image"></div>
+
+        <div class="hero-content">
+            <span class="hero-label">BE AWESOME — COLLECTION 2026</span>
+
+            <h1>VISTA SUA.<br>ATITUDE.</h1>
+
+            <p>
+                Mais do que vestir. Uma forma de expressar
+                quem és, sem precisar de dizer uma palavra.
+            </p>
+
+            <a href="#colecoes" class="hero-button">
+                EXPLORAR COLEÇÃO
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+
+        <div class="hero-bottom">
+            <span>10 — 12</span>
+            <span>NEW COLLECTION / 2026</span>
+        </div>
+
+    </section>
+
+    <!-- COLEÇÕES -->
+    <section class="collections-section" id="colecoes">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-eyebrow">DISCOVER OUR STYLE</span>
+                <h2>As nossas coleções<span>.</span></h2>
+            </div>
+
+            <a href="#colecoes" class="view-all">
+                VER COLEÇÃO COMPLETA
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- PRODUTO 1 -->
+            <article class="product-card"
+                data-name="Awesome 2025"
+                data-price="1400"
+                data-color="Preto">
+
+                <div class="product-image-wrapper">
+
+                    <div class="product-slider">
+                        <img src="images/produtos/creme.jpg" alt="Awesome 2025 Creme" loading="lazy"> 
+
+                        <img src="images/produtos/preto.jpg">
+
+                        <img src="images/produtos/branco.jpg">
+                        <img src="images/produtos/cinza.jpg">
+                    </div>
+
+                    <span class="product-tag">BEST SELLER</span>
+
+                    <button class="product-favorite" aria-label="Adicionar aos favoritos">
+                        <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" aria-label="Imagem anterior">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <span class="slider-counter">01 / 03</span>
+
+                        <button class="slider-arrow next" aria-label="Próxima imagem">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-details">
+                        <div>
+                            <h3>Awesome 2025</h3>
+                            <span class="product-model">T-SHIRT / OVERSIZED</span>
+                        </div>
+
+                        <strong>1400 MT</strong>
+                    </div>
+
+                    <div class="product-colors">
+                        <span class="color-label">CORES:</span>
+                        <button class="color-dot black active" aria-label="Preto"></button>
+                        <button class="color-dot white" aria-label="Branco"></button>
+                        <button class="color-dot cream active" aria-label="Creme"></button>
+                        <button class="color-dot gray" aria-label="Cinza"></button>
+                    </div>
+
+                    <button class="add-cart-button">
+                        <i class="bi bi-bag-plus"></i>
+                        ADICIONAR AO CARRINHO
+                    </button>
+
+                </div>
+            </article>
+
+            <!-- PRODUTO 2 -->
+            <article class="product-card"
+                data-name="Essential White"
+                data-price="700"
+                data-color="Branco">
+
+                <div class="product-image-wrapper">
+
+                    <div class="product-slider">
+                        <img src="images/produtos/700branco.jpg"> 
+
+                        <img src="images/produtos/700creme.jpg">
+
+                        <img src="images/produtos/700preto.jpg">
+                        <img src="images/produtos/700cinza.jpg">
+                    </div>
+
+                    <button class="product-favorite" aria-label="Adicionar aos favoritos">
+                        <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" aria-label="Imagem anterior">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <span class="slider-counter">01 / 03</span>
+
+                        <button class="slider-arrow next" aria-label="Próxima imagem">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-details">
+                        <div>
+                            <h3>AWESOME 2022</h3>
+                            <span class="product-model">T-SHIRT / REGULAR</span>
+                        </div>
+
+                        <strong>700 MT</strong>
+                    </div>
+
+                    <div class="product-colors">
+                        <span class="color-label">CORES:</span>
+                        <button class="color-dot black active" aria-label="Preto"></button>
+                        <button class="color-dot white" aria-label="Branco"></button>
+                        <button class="color-dot cream active" aria-label="Creme"></button>
+                        <button class="color-dot gray" aria-label="Cinza"></button>
+                    </div>
+
+                    <button class="add-cart-button">
+                        <i class="bi bi-bag-plus"></i>
+                        ADICIONAR AO CARRINHO
+                    </button>
+
+                </div>
+            </article>
+
+            <!-- PRODUTO 3 -->
+            <article class="product-card"
+                data-name="Awesome Street"
+                data-price="800"
+                data-color="Preto">
+
+                <div class="product-image-wrapper">
+
+                     <div class="product-slider">
+                        <img src="images/produtos/800preto.jpg"> 
+
+                        <img src="images/produtos/800branco.jpg">
+
+                        <img src="images/produtos/800creme.jpg">
+                        <img src="images/produtos/800cinza.jpg">
+                    </div>
+
+                    <span class="product-tag">NEW ARRIVAL</span>
+
+                    <button class="product-favorite" aria-label="Adicionar aos favoritos">
+                        <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" aria-label="Imagem anterior">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <span class="slider-counter">01 / 03</span>
+
+                        <button class="slider-arrow next" aria-label="Próxima imagem">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-details">
+                        <div>
+                            <h3>AWESOME 2023</h3>
+                            <span class="product-model">T-SHIRT / REGULAR</span>
+                        </div>
+
+                        <strong>800 MT</strong>
+                    </div>
+
+                    <div class="product-colors">
+                        <span class="color-label">CORES:</span>
+                        <button class="color-dot black active" aria-label="Preto"></button>
+                        <button class="color-dot white" aria-label="Branco"></button>
+                        <button class="color-dot cream active" aria-label="Creme"></button>
+                        <button class="color-dot gray" aria-label="Cinza"></button>
+                    </div>
+
+                    <button class="add-cart-button">
+                        <i class="bi bi-bag-plus"></i>
+                        ADICIONAR AO CARRINHO
+                    </button>
+
+                </div>
+            </article>
+
+            <!-- PRODUTO 4 -->
+            <article class="product-card"
+                data-name="AWESOME 2024"
+                data-price="650"
+                data-color="Branco">
+
+                <div class="product-image-wrapper">
+
+                    <div class="product-slider">
+                        <img src="images/produtos/600cinza.jpg"> 
+
+                        <img src="images/produtos/600branco.jpg">
+
+                        <img src="images/produtos/600preto.jpg">
+                        <img src="images/produtos/600creme.jpg">
+                    </div>
+
+                    <button class="product-favorite" aria-label="Adicionar aos favoritos">
+                        <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" aria-label="Imagem anterior">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <span class="slider-counter">01 / 03</span>
+
+                        <button class="slider-arrow next" aria-label="Próxima imagem">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-details">
+                        <div>
+                            <h3>AWESOME 2024</h3>
+                            <span class="product-model">T-SHIRT / PREMIUM</span>
+                        </div>
+
+                        <strong>650 MT</strong>
+                    </div>
+
+                    <div class="product-colors">
+                        <span class="color-label">CORES:</span>
+                        <button class="color-dot black active" aria-label="Preto"></button>
+                        <button class="color-dot white" aria-label="Branco"></button>
+                        <button class="color-dot cream active" aria-label="Creme"></button>
+                        <button class="color-dot gray" aria-label="Cinza"></button>
+                    </div>
+
+                    <button class="add-cart-button">
+                        <i class="bi bi-bag-plus"></i>
+                        ADICIONAR AO CARRINHO
+                    </button>
+
+                </div>
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+            <!-- PRODUTO 5 -->
+            <article class="product-card"
+                data-name="AWESOME REVEILLON 2025"
+                data-price="650"
+                data-color="Branco">
+
+                <div class="product-image-wrapper">
+
+                    <div class="product-slider">
+                        <img src="images/produtos/850branco.jpg"> 
+
+                        <img src="images/produtos/850cinza.jpg">
+
+                        <img src="images/produtos/850creme.jpg">
+                        <img src="images/produtos/850preto.jpg">
+                    </div>
+
+                    <button class="product-favorite" aria-label="Adicionar aos favoritos">
+                        <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" aria-label="Imagem anterior">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <span class="slider-counter">01 / 03</span>
+
+                        <button class="slider-arrow next" aria-label="Próxima imagem">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-details">
+                        <div>
+                            <h3>AWESOME REVEILLON 2025</h3>
+                            <span class="product-model">T-SHIRT / PREMIUM</span>
+                        </div>
+
+                        <strong>650 MT</strong>
+                    </div>
+
+                    <div class="product-colors">
+                        <span class="color-label">CORES:</span>
+                        <button class="color-dot black active" aria-label="Preto"></button>
+                        <button class="color-dot white" aria-label="Branco"></button>
+                        <button class="color-dot cream active" aria-label="Creme"></button>
+                        <button class="color-dot gray" aria-label="Cinza"></button>
+                    </div>
+
+                    <button class="add-cart-button">
+                        <i class="bi bi-bag-plus"></i>
+                        ADICIONAR AO CARRINHO
+                    </button>
+
+                </div>
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- PRODUTO 6 -->
+            <article class="product-card"
+                data-name="AWESOME CAP 2026"
+                data-price="1300"
+                data-color="Branco">
+
+                <div class="product-image-wrapper">
+
+                    <div class="product-slider">
+                        <img src="images/produtos/CHAPEU2.jpg"> 
+
+                        <img src="images/produtos/CHAPEU1.jpg">
+
+                        <img src="images/produtos/CHAPEU1.jpg">
+                        
+                    </div>
+
+                    <button class="product-favorite" aria-label="Adicionar aos favoritos">
+                        <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" aria-label="Imagem anterior">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <span class="slider-counter">01 / 03</span>
+
+                        <button class="slider-arrow next" aria-label="Próxima imagem">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-details">
+                        <div>
+                            <h3>AWESOME CAP 2026</h3>
+                            <span class="product-model">BONÉ / 2026</span>
+                        </div>
+
+                        <strong>1300 MT</strong>
+                    </div>
+
+                    <div class="product-colors">
+                        <span class="color-label">CORES:</span>
+                        <button class="color-dot black active" aria-label="Preto"></button>
+                        
+                    </div>
+
+                    <button class="add-cart-button">
+                        <i class="bi bi-bag-plus"></i>
+                        ADICIONAR AO CARRINHO
+                    </button>
+
+                </div>
+            </article>
+
+
+
+
+
+            <!-- PRODUTO 7 -->
+            <article class="product-card"
+                data-name="GIRLS COLLECTIN 2026"
+                data-price="699"
+                data-color="Branco">
+
+                <div class="product-image-wrapper">
+
+                    <div class="product-slider">
+                        <img src="images/produtos/CROPPED.jpg"> 
+
+                        
+                    </div>
+
+                    <button class="product-favorite" aria-label="Adicionar aos favoritos">
+                        <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" aria-label="Imagem anterior">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <span class="slider-counter">01 / 03</span>
+
+                        <button class="slider-arrow next" aria-label="Próxima imagem">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-details">
+                        <div>
+                            <h3>GIRLS COLLECTION 2026</h3>
+                            <span class="product-model">PRÉ-VENDA</span>
+                        </div>
+
+                        <strong>699 MT</strong>
+                    </div>
+
+                    <div class="product-colors">
+                        <span class="color-label">CORES:</span>
+                     
+                        <button class="color-dot white" aria-label="Branco"></button>
+                        
+                    </div>
+
+                    <button class="add-cart-button">
+                        <i class="bi bi-bag-plus"></i>
+                        ADICIONAR AO CARRINHO
+                    </button>
+
+                </div>
+            </article>
+
+
+
+        </div>
+    </section>
+
+    <!-- BANNER SECUNDÁRIO -->
+    <section class="brand-banner" id="sobre">
+
+        <div class="brand-banner-image"></div>
+
+        <div class="brand-banner-content">
+            <span>OUR PHILOSOPHY</span>
+
+            <h2>Não sigas tendências.<br>Cria a tua identidade.</h2>
+
+            <p>
+                A BE AWESOME representa atitude, autenticidade
+                e liberdade de expressão.
+            </p>
+
+            <a href="#galeria" class="dark-button">
+                DESCOBRIR A MARCA
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+    <section class="gallery-section" id="galeria">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-eyebrow">BE AWESOME IN REAL LIFE</span>
+                <h2>O nosso universo<span>.</span></h2>
+            </div>
+
+            <p class="gallery-description">
+                Uma identidade. Diferentes formas de expressão.
+            </p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item gallery-large">
+                <img src="images/galeria/g1.jpg" alt="BE AWESOME editorial">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/galeria/g2.jpg" alt="Fashion lifestyle">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/galeria/g3.jpg" alt="Fashion style">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/galeria/g4.jpg" alt="Streetwear style">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/galeria/g5.jpg" alt="Fashion campaign">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <a href="#home" class="brand-logo">BE AWESOME<span>.</span></a>
+                <p>Wear your attitude. Express yourself.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>EXPLORAR</h4>
+                <a href="#home">Início</a>
+                <a href="#colecoes">Coleções</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#sobre">Sobre nós</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>CONTACTO</h4>
+                <a href="mailto:contacto@beawesome.com">Email</a>
+                <a href="#">WhatsApp</a>
+                <a href="#">Instagram</a>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>FICA POR DENTRO</h4>
+                <p>Recebe novidades sobre as próximas coleções.</p>
+
+                <form id="newsletterForm">
+                    <input type="email" placeholder="O teu email" required>
+
+                    <button type="submit" aria-label="Subscrever">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 BE AWESOME. TODOS OS DIREITOS RESERVADOS.</span>
+            <span>DESENHADO POR: BERNO J.MURRIME.</span>
+        </div>
+
+    </footer>
+
+</main>
+
+<!-- CARRINHO LATERAL -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-panel" id="cartPanel" aria-label="Carrinho de compras">
+
+    <div class="cart-header">
+        <h3>O teu carrinho</h3>
+
+        <button id="closeCart" aria-label="Fechar carrinho">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+        <p class="empty-cart">O teu carrinho está vazio.</p>
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>TOTAL</span>
+            <strong id="cartTotal">0 MT</strong>
+        </div>
+
+        <button class="checkout-button" id="checkoutButton">
+            FINALIZAR PEDIDO
+            <i class="bi bi-whatsapp"></i>
+        </button>
+
+        <p>O pedido será enviado através do WhatsApp.</p>
+
+    </div>
+
+</aside>
+
+
+
+
+
+
+
+
+<!-- LIGHTBOX / VISUALIZAÇÃO AMPLIADA -->
+<div class="image-lightbox" id="imageLightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+        <i class="bi bi-x-lg"></i>
+    </button>
+
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev">
+        <i class="bi bi-chevron-left"></i>
+    </button>
+
+    <div class="lightbox-content">
+        <img src="" id="lightboxImage" alt="Imagem ampliada do produto">
+        <span id="lightboxCounter">01 / 04</span>
+    </div>
+
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext">
+        <i class="bi bi-chevron-right"></i>
+    </button>
+
+</div>
+
+
+
+
+
+
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
