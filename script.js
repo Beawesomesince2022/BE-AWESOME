@@ -197,7 +197,7 @@ window.addEventListener("scroll", () => {
    BE AWESOME - SHOPPING CART
 ================================= */
 
-const WHATSAPP_NUMBER = "258840000000";
+const WHATSAPP_NUMBER = "258845725879";
 
 let cart = JSON.parse(localStorage.getItem("beAwesomeCart")) || [];
 
@@ -352,7 +352,7 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
     message += `TOTAL: ${formatPrice(total)}\n\n`;
     message += "Gostaria de confirmar a disponibilidade da encomenda.";
 
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${258845725879}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
 });
