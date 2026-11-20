@@ -1132,3 +1132,131 @@ img {
     cursor: zoom-in;
     pointer-events: auto;
 }
+
+/* =================================
+   BLACK FRIDAY BANNER
+================================= */
+
+.black-friday-banner {
+    width: 100%;
+    min-height: 390px;
+    background: #111;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.black-friday-content {
+    position: relative;
+    z-index: 2;
+}
+
+.black-friday-label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: #aaa;
+}
+
+.black-friday-content h2 {
+    font-size: clamp(38px, 7vw, 76px);
+    font-weight: 800;
+    letter-spacing: -4px;
+    margin: 15px 0 0;
+}
+
+.black-friday-content h2 span {
+    color: #999;
+}
+
+.black-friday-discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 5px 0 15px;
+}
+
+.black-friday-discount strong {
+    font-size: clamp(85px, 13vw, 145px);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -8px;
+}
+
+.black-friday-discount span {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.black-friday-content p {
+    font-size: 12px;
+    color: #bbb;
+    margin: 15px 0 25px;
+}
+
+.black-friday-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background: #fff;
+    color: #111;
+    padding: 16px 25px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.black-friday-button:hover {
+    background: #ccc;
+    color: #111;
+}
+
+.black-friday-side {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+
+    .black-friday-banner {
+        min-height: 350px;
+        padding: 55px 15px;
+    }
+
+    .black-friday-content h2 {
+        letter-spacing: -2px;
+    }
+
+    .black-friday-discount strong {
+        letter-spacing: -5px;
+    }
+
+    .black-friday-discount span {
+        font-size: 25px;
+    }
+
+    .black-friday-content p {
+        max-width: 290px;
+        line-height: 1.8;
+    }
+
+    .black-friday-side {
+        font-size: 7px;
+    }
+
+}
