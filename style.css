@@ -1,7 +1,6 @@
-
-/* ==============================
+/* ==========================================
    BE AWESOME - MAIN STYLESHEET
-============================== */
+========================================== */
 
 :root {
     --white: #ffffff;
@@ -43,7 +42,9 @@ img {
     max-width: 100%;
 }
 
-/* HEADER */
+/* ==========================================
+   HEADER
+========================================== */
 
 .main-header {
     width: 100%;
@@ -130,7 +131,9 @@ img {
     font-size: 25px;
 }
 
-/* HERO BANNER */
+/* ==========================================
+   HERO BANNER
+========================================== */
 
 .hero {
     min-height: 660px;
@@ -147,8 +150,7 @@ img {
     inset: 0;
     background:
         linear-gradient(90deg, rgba(0,0,0,.66), rgba(0,0,0,.08)),
-        url("images/banner/banner-principal.jpg");
-        center 35% / cover no-repeat;
+        url("images/banner/banner-principal.jpg") center 35% / cover no-repeat;
     transform: scale(1.01);
 }
 
@@ -214,7 +216,108 @@ img {
     letter-spacing: 2px;
 }
 
-/* SECTION HEADING */
+/* ==========================================
+   BLACK FRIDAY BANNER
+========================================== */
+
+.black-friday-banner {
+    width: 100%;
+    min-height: 390px;
+    background: #111;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.black-friday-content {
+    position: relative;
+    z-index: 2;
+}
+
+.black-friday-label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: #aaa;
+}
+
+.black-friday-content h2 {
+    font-size: clamp(38px, 7vw, 76px);
+    font-weight: 800;
+    letter-spacing: -4px;
+    margin: 15px 0 0;
+    color: #fff;
+}
+
+.black-friday-content h2 span {
+    color: #999;
+}
+
+.black-friday-discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 5px 0 15px;
+}
+
+.black-friday-discount strong {
+    font-size: clamp(85px, 13vw, 145px);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -8px;
+}
+
+.black-friday-discount span {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.black-friday-content p {
+    font-size: 12px;
+    color: #bbb;
+    margin: 15px 0 25px;
+}
+
+.black-friday-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background: #fff;
+    color: #111;
+    padding: 16px 25px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.black-friday-button:hover {
+    background: #ccc;
+    color: #111;
+}
+
+.black-friday-side {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
 
 .collections-section,
 .gallery-section {
@@ -259,7 +362,9 @@ img {
     white-space: nowrap;
 }
 
-/* PRODUCT CARDS */
+/* ==========================================
+   PRODUCT CARDS
+========================================== */
 
 .product-grid {
     display: grid;
@@ -434,10 +539,16 @@ img {
 }
 
 .color-dot.gray {
-    background: #999;
+    background: #808080;
 }
 
-/* BRAND BANNER */
+.color-dot.cream {
+    background-color: #E8DDC8;
+}
+
+/* ==========================================
+   BRAND BANNER
+========================================== */
 
 .brand-banner {
     min-height: 560px;
@@ -453,8 +564,7 @@ img {
     inset: 0;
     background:
         linear-gradient(90deg, rgba(0,0,0,.68), rgba(0,0,0,.1)),
-         url("images/banner/banner-marca.jpg");
-        center 40% / cover no-repeat;
+        url("images/banner/banner-marca.jpg") center 40% / cover no-repeat;
 }
 
 .brand-banner-content {
@@ -496,7 +606,9 @@ img {
     color: black;
 }
 
-/* GALLERY */
+/* ==========================================
+   GALLERY
+========================================== */
 
 .gallery-description {
     font-size: 12px;
@@ -531,7 +643,9 @@ img {
     grid-row: span 2;
 }
 
-/* FOOTER */
+/* ==========================================
+   FOOTER
+========================================== */
 
 .main-footer {
     background: #111;
@@ -622,9 +736,12 @@ img {
     letter-spacing: 1px;
 }
 
-/* RESPONSIVE */
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
 
 @media (max-width: 1100px) {
+
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 35px 20px;
@@ -638,6 +755,10 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
 
 @media (max-width: 768px) {
 
@@ -755,9 +876,40 @@ img {
         flex-direction: column;
         font-size: 8px;
     }
+
+    .black-friday-banner {
+        min-height: 350px;
+        padding: 55px 15px;
+    }
+
+    .black-friday-content h2 {
+        letter-spacing: -2px;
+    }
+
+    .black-friday-discount strong {
+        letter-spacing: -5px;
+    }
+
+    .black-friday-discount span {
+        font-size: 25px;
+    }
+
+    .black-friday-content p {
+        max-width: 290px;
+        line-height: 1.8;
+    }
+
+    .black-friday-side {
+        font-size: 7px;
+    }
 }
 
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
 @media (max-width: 400px) {
+
     .header-actions {
         gap: 13px;
     }
@@ -777,19 +929,9 @@ img {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* BOTÃO ADICIONAR AO CARRINHO */
+/* ==========================================
+   ADD TO CART BUTTON
+========================================== */
 
 .add-cart-button {
     width: 100%;
@@ -815,7 +957,9 @@ img {
     color: #111;
 }
 
-/* CARRINHO LATERAL */
+/* ==========================================
+   SHOPPING CART
+========================================== */
 
 .cart-overlay {
     position: fixed;
@@ -990,46 +1134,25 @@ img {
     margin-top: 12px;
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
+
     .cart-panel {
         max-width: 100%;
     }
 }
 
+/* ==========================================
+   LIGHTBOX
+========================================== */
 
-
-.color-dot.cream {
-    background-color: #E8DDC8;
-}
-
-.color-dot.gray {
-    background-color: #808080;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* LIGHTBOX */
 .image-lightbox {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.96);
     z-index: 99999;
-
     display: none;
     align-items: center;
     justify-content: center;
-
     padding: 40px;
 }
 
@@ -1042,7 +1165,6 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
     max-width: 90%;
     max-height: 90%;
 }
@@ -1095,8 +1217,10 @@ img {
     opacity: 0.6;
 }
 
-/* MOBILE */
+/* LIGHTBOX MOBILE */
+
 @media (max-width: 600px) {
+
     .image-lightbox {
         padding: 15px;
     }
@@ -1119,144 +1243,12 @@ img {
     }
 }
 
+/* ==========================================
+   CLICK ON PRODUCT AND GALLERY PHOTOS
+========================================== */
 
-
-
-
-
-
-
-/* CLIQUE NAS FOTOGRAFIAS */
 .product-slider img,
 .gallery-grid img {
     cursor: zoom-in;
     pointer-events: auto;
-}
-
-/* =================================
-   BLACK FRIDAY BANNER
-================================= */
-
-.black-friday-banner {
-    width: 100%;
-    min-height: 390px;
-    background: #111;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 65px 20px;
-}
-
-.black-friday-content {
-    position: relative;
-    z-index: 2;
-}
-
-.black-friday-label {
-    font-size: 10px;
-    letter-spacing: 4px;
-    font-weight: 500;
-    color: #aaa;
-}
-
-.black-friday-content h2 {
-    font-size: clamp(38px, 7vw, 76px);
-    font-weight: 800;
-    letter-spacing: -4px;
-    margin: 15px 0 0;
-}
-
-.black-friday-content h2 span {
-    color: #999;
-}
-
-.black-friday-discount {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin: 5px 0 15px;
-}
-
-.black-friday-discount strong {
-    font-size: clamp(85px, 13vw, 145px);
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: -8px;
-}
-
-.black-friday-discount span {
-    font-size: 35px;
-    font-weight: 700;
-}
-
-.black-friday-content p {
-    font-size: 12px;
-    color: #bbb;
-    margin: 15px 0 25px;
-}
-
-.black-friday-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    background: #fff;
-    color: #111;
-    padding: 16px 25px;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    transition: .3s;
-}
-
-.black-friday-button:hover {
-    background: #ccc;
-    color: #111;
-}
-
-.black-friday-side {
-    position: absolute;
-    bottom: 20px;
-    left: 5%;
-    right: 5%;
-    display: flex;
-    justify-content: space-between;
-    color: #777;
-    font-size: 9px;
-    letter-spacing: 2px;
-}
-
-@media (max-width: 600px) {
-
-    .black-friday-banner {
-        min-height: 350px;
-        padding: 55px 15px;
-    }
-
-    .black-friday-content h2 {
-        letter-spacing: -2px;
-    }
-
-    .black-friday-discount strong {
-        letter-spacing: -5px;
-    }
-
-    .black-friday-discount span {
-        font-size: 25px;
-    }
-
-    .black-friday-content p {
-        max-width: 290px;
-        line-height: 1.8;
-    }
-
-    .black-friday-side {
-        font-size: 7px;
-    }
-
 }
